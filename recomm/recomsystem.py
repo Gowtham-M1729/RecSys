@@ -1,12 +1,9 @@
 import pandas as pd
-# import numpy as np
-# import matplotlib.pyplot as plt
-# import seaborn as sns
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-df=pd.read_csv("Netflix_Data/NetflixData.csv",index_col=False)
+df=pd.read_csv("./Netflix_Data/NetflixData.csv", index_col=False)
 filledna=df.fillna('')
 
 
